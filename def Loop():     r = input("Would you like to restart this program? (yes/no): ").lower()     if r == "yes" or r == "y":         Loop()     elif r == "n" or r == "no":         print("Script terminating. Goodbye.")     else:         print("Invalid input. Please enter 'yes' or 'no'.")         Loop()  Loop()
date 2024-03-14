@@ -1,0 +1,11 @@
+def Loop():
+    r = input("Would you like to restart this program? (yes/no): ").lower()
+    if r == "yes" or r == "y":
+        Loop()
+    elif r == "n" or r == "no":
+        print("Script terminating. Goodbye.")
+    else:
+        print("Invalid input. Please enter 'yes' or 'no'.")
+        Loop()
+
+Loop()
